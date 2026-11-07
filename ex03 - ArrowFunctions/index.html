@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Tech - Ex03 Funções Anônimas e Lambda</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Folha de Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="page-header">
+            <span class="badge">Startup Tech</span>
+            <h1>Gestão de Funcionários</h1>
+            <p class="subtitle">Ex03 - Funções Anônimas e Lambda</p>
+        </header>
+
+        <!-- Formulário de Cadastro / Edição -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Cadastrar Novo Funcionário</h2>
+                <p>Preencha as informações do funcionário abaixo para adicioná-lo ou editá-lo.</p>
+            </div>
+
+            <form id="formFuncionario">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite o nome completo">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" min="14" placeholder="Ex: 25">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cargo">Cargo:</label>
+                        <input type="text" id="cargo" placeholder="Ex: Desenvolvedor">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="salario">Salário (R$):</label>
+                    <input type="number" id="salario" min="0" step="0.01" placeholder="Ex: 4500.00">
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="btnCadastrar" class="btn btn-primary">Cadastrar</button>
+                    <button type="button" id="btnCancelar" class="btn btn-secondary" hidden>Cancelar edição</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Seção de Busca -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Buscar Funcionário</h2>
+                <p>Pesquise colaboradores cadastrados informando o nome completo, parte do nome ou ID.</p>
+            </div>
+
+            <div class="search-box">
+                <div class="search-input-group">
+                    <input type="text" id="txtBusca" placeholder="Digite o nome ou ID...">
+                    <button type="button" id="btnBuscar" class="btn btn-primary">Buscar</button>
+                </div>
+                <div id="resultadoBusca" class="search-result"></div>
+            </div>
+        </section>
+
+        <!-- Tabela de Funcionários -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Funcionários Cadastrados</h2>
+                <p>Lista dos funcionários ativos registrados no sistema.</p>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Cargo</th>
+                            <th>Salário</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaFuncionarios"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="../funcionario.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
