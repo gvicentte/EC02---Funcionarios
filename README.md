@@ -7,10 +7,10 @@ Sistema em HTML + JavaScript puro para **cadastrar, listar, alterar, excluir** f
 | Pasta | Exercício | Conceitos |
 |---|---|---|
 | `funcionario.js` | Classe compartilhada | atributos privados, construtor, get/set, `atualizar()`, `toString()` |
-| `ex01-cadastro/` | Cadastro e listagem | formulário, classe, array de objetos, evento de clique |
-| `ex02-editar-excluir/` | Excluir e alterar | `onclick` com funções anônimas, atualização via métodos da classe |
-| `ex03-arrow-functions/` | Funções anônimas e lambda | `addEventListener`, arrow functions para busca/remoção/atualização, comparação tradicional x arrow |
-| `ex04-relatorios/` | Relatórios | `filter`, `map`, `reduce`, `new Set()` |
+| `ex01 - Cadastro/` | Cadastro e listagem | formulário, classe, array de objetos, evento de clique |
+| `ex02 - Editar-Excluir/` | Excluir e alterar | `onclick` com funções anônimas, atualização via métodos da classe |
+| `ex03 - ArrowFunctions/` | Funções anônimas e lambda | `addEventListener`, arrow functions para busca/remoção/atualização, comparação tradicional x arrow |
+| `ex04 - Relatorios/` | Relatórios | `filter`, `map`, `reduce`, `new Set()` |
 
 ## Rodar com Docker
 ```bash
